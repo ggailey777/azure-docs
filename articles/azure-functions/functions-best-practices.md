@@ -3,14 +3,14 @@ title: Azure Functions best practices
 description: Learn best practices for designing, deploying, and maintaining efficient function code running in Azure.
 ms.assetid: 9058fb2f-8a93-4036-a921-97a0772f503c
 ms.topic: conceptual
-ms.date: 08/30/2021
+ms.date: 09/20/2021
 # Customer intent: As a developer, I want to understand how to correctly design, deploy, and maintain my functions so I can run them in the most safe and efficient way possible.
 ---
 # Best practices for reliable Azure Functions
 
-Azure Functions is an event driven, compute-on-demand experience that extends the existing Azure App Service application platform with capabilities to implement code triggered by events occurring in Azure or third-party service and on-premises systems. Azure Functions allows developers to build solutions by connecting to data sources or messaging solutions thus making it easy to process and react to events. Azure Functions runs on the Azure data centers. Modern-day data centers are complex and have many moving parts. VMs can restart or move, systems are upgraded. These events are to be expected in a cloud environment. In addition, your Azure Functions app may depend on external APIs, Azure Services, and other databases. 
+Azure Functions is an event-driven, compute-on-demand experience that extends the existing Azure App Service application platform with capabilities to implement code triggered by events occurring in Azure, in third-party service, and in on-premises systems. Functions lets you build solutions by connecting to data sources or messaging solutions, which makes it easier to process and react to events. Functions runs on the Azure data centers, which are complex and have many moving parts. In hosted cloud environment, it's expected that VMs can occasionally restart or move, and systems upgrades will occur. Your functions apps also likely depend on external APIs, Azure Services, and other databases, which are also prone to periodic unreliability. 
 
-This document provides recommendations to help you design and deploy efficient function apps that remain healthy and perform well, even in a cloud-based environment.
+This document provides recommendations to help you design and deploy efficient function apps that remain healthy and perform well in a cloud-based environment.
 
 ## Choose the correct hosting plan 
 
